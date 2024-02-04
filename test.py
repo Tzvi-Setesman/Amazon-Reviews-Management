@@ -9,7 +9,7 @@ import time
 from nltk.corpus import wordnet
 import nltk
 
-Max rows allowed in a single Excel sheet
+# Max rows allowed in a single Excel sheet
 MAX_ROWS_PER_SHEET = 1048576
 
 def timer_function(func):
