@@ -3,3 +3,4 @@ pandas
 nltk
 openpyxl
 xlsxwriter
+nltk.corpus
