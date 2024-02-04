@@ -7,7 +7,6 @@ import re
 import shutil
 import time
 from nltk.corpus import wordnet
-import nktk
 
 
 try:
