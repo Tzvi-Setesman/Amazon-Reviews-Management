@@ -7,13 +7,14 @@ import re
 import shutil
 import time
 from nltk.corpus import wordnet
+import nltk
 
 
-try:
-    nltk.download('wordnet')
-    st.success("NLTK Wordnet downloaded successfully!")
-except LookupError:
-    st.error("Failed to download NLTK Wordnet. Please check your internet connection or NLTK installation.")
+# try:
+#     nltk.download('wordnet')
+#     st.success("NLTK Wordnet downloaded successfully!")
+# except LookupError:
+#     st.error("Failed to download NLTK Wordnet. Please check your internet connection or NLTK installation.")
 
 # Max rows allowed in a single Excel sheet
 MAX_ROWS_PER_SHEET = 1048576
