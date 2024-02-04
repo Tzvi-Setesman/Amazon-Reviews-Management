@@ -141,7 +141,7 @@ def main():
     sentiment = st.sidebar.radio('Sentiment Type', ('positive', 'negative'))
 
     if 'loaded_data' not in st.session_state:
-        file_paths = ["a.csv", "test.csv"]
+        file_paths = ["a.csv", "b.csv"]
         st.session_state.loaded_data = load_data(file_paths)
         st.write(f"Total rows loaded: {len(st.session_state.loaded_data)}")
 
