@@ -60,7 +60,7 @@ def filter_data_by_sentiment(data, sentiment):
     sentiment_mapping = {'positive': 2, 'negative': 1}
     return data[data["polarity"] == sentiment_mapping[sentiment]]
 
-@st.cache(allow_output_mutation=True, suppress_st_warning=True)
+@st.cache_data
 @timer_function
 def find_similar_words(data, search_word):
     """
