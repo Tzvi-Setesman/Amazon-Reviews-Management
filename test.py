@@ -74,6 +74,13 @@ def find_similar_words(data, search_word):
     Returns:
     - Tuple of (filtered pandas DataFrame, list of similar words).
     """
+
+    try:
+        wordnet.synsets('test')  
+    except LookupError:
+        nltk.download('wordnet')  
+        wordnet.ensure_loaded()  
+    
     synonyms = []
     if search_word:
         synonyms = [lemma.name() for syn in wordnet.synsets(search_word) for lemma in syn.lemmas()]
