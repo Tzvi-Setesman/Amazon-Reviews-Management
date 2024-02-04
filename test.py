@@ -45,7 +45,7 @@ def load_data(file_paths):
     data_frames = [pd.read_csv(file_path, names=["polarity", "title", "text"]) for file_path in file_paths]
     return pd.concat(data_frames)
 
-@st.cache(allow_output_mutation=True, suppress_st_warning=True)
+@st.cache_data
 @timer_function
 def filter_data_by_sentiment(data, sentiment):
     """
